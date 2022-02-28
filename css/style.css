@@ -14,6 +14,10 @@ a {
   color: rgb(128, 128, 128);
 }
 
+.bgc-grey {
+  background-color: rgb(245, 245, 245);
+}
+
 .blue {
   color: rgb(51, 127, 226);
   border-bottom: 1px solid rgb(51, 127, 226);
@@ -45,4 +49,20 @@ header #user {
 
 header #navbar {
   width: 50%;
+}
+
+/* Footer */
+
+footer {
+  height: 50px;
+}
+
+footer span {
+  font-size: 0.7rem;
+  padding-right: 10px;
+  color: grey;
+}
+
+.line-h {
+  line-height: 50px;
 }

@@ -133,6 +133,21 @@ $faqs = [
     ],
 ];
 
+$footer = [
+    'Google',
+    'Tutto su Google',
+    'Privacy',
+    'Termini',
+];
+
+$languages = [
+    'Italiano',
+    'Inglese',
+    'Francese',
+    'Tedesco',
+    'Spagnolo',
+];
+
 ?>
 
 <!DOCTYPE html>
@@ -191,11 +206,29 @@ $faqs = [
 
         </main>
 
-        <footer>
-
-        </footer>
-
     </section>
+
+    <footer class="bgc-grey">
+        <section class="container-m d-flex justify-content-between">
+
+            <div>
+                <?php foreach ($footer as $item) : ?>
+                    <span class="line-h"><?= $item ?></span>
+                <?php endforeach; ?>
+            </div>
+
+            <div id="select-languages">
+                <i class="line-h fa-solid fa-earth-africa"></i>
+                <select class="line-h ms-2" name="language">
+                    <?php foreach ($languages as $language) : ?>
+                        <option><?= $language ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+
+        </section>
+    </footer>
+
 
 </body>
 
