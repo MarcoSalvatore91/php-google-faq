@@ -1,11 +1,26 @@
 <?php
 
-$navbars = [
-    'Introduzione',
-    'Norme sulla privacy',
-    'Termini di servizio',
-    'Tecnologie',
-    'Domande Frequenti',
+$navbar = [
+    [
+        'Introduzione',
+        'is_active' => false,
+    ],
+    [
+        'Norme sulla privacy',
+        'is_active' => false,
+    ],
+    [
+        'Termini di servizio',
+        'is_active' => false,
+    ],
+    [
+        'Tecnologie',
+        'is_active' => false,
+    ],
+    [
+        'Domande Frequenti',
+        'is_active' => true,
+    ],
 ];
 
 $faqs = [
@@ -139,12 +154,17 @@ $faqs = [
         <div class="d-flex justify-content-between">
             <div class="d-flex">
                 <img class="me-2" src="img/Google_2015_logo.svg.png" alt="logo">
-                <h4>Privacy e termini</h4>
+                <h4 class="grey">Privacy e termini</h4>
             </div>
             <div>
                 <i class="fa-solid fa-bars"></i>
-                <span>M</span>
+                <span id="user" class="fw-bold text-white rounded-circle">M</span>
             </div>
+        </div>
+        <div id="navbar" class="d-flex justify-content-between">
+            <?php foreach ($navbar as $item) : ?>
+                <a class="<?= $item['is_active'] ? 'blue' : 'grey' ?>" href="#"><?= $item[0] ?></a>
+            <?php endforeach; ?>
         </div>
     </header>
 

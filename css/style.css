@@ -10,9 +10,39 @@ a {
   margin: 0 auto;
 }
 
+.grey {
+  color: rgb(128, 128, 128);
+}
+
+.blue {
+  color: rgb(51, 127, 226);
+  border-bottom: 1px solid rgb(51, 127, 226);
+  padding-bottom: 8px;
+}
+
 /* Header */
+
+header {
+  height: 90px;
+  padding: 20px;
+  border-bottom: 1px solid rgb(203, 203, 203);
+  margin-bottom: 80px;
+}
 
 header img {
   width: 90px;
   height: 30px;
+}
+
+header i {
+  margin: 0 20px;
+}
+
+header #user {
+  padding: 8px 12px;
+  background-color: rgb(92, 107, 192);
+}
+
+header #navbar {
+  width: 50%;
 }
