@@ -119,6 +119,8 @@ $faqs = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>FAQ</title>
 </head>
 
@@ -128,30 +130,34 @@ $faqs = [
 
     </header>
 
-    <main>
-        <?php foreach ($faqs as $key => $faq) : ?>
+    <section class="container-m">
 
-            <?php foreach ($faq as $content) : ?>
+        <main>
+            <?php foreach ($faqs as $key => $faq) : ?>
 
-                <h3><?= $content['title'] ?></h3>
+                <?php foreach ($faq as $content) : ?>
 
-                <?php $paragraphs = explode("|", $content['text']); ?>
+                    <h3><?= $content['title'] ?></h3>
 
-                <?php foreach ($paragraphs as $paragraph) : ?>
+                    <?php $paragraphs = explode("|", $content['text']); ?>
 
-                    <p><?= $paragraph ?></p>
+                    <?php foreach ($paragraphs as $paragraph) : ?>
+
+                        <p><?= $paragraph ?></p>
+
+                    <?php endforeach; ?>
 
                 <?php endforeach; ?>
 
             <?php endforeach; ?>
 
-        <?php endforeach; ?>
+        </main>
 
-    </main>
+        <footer>
 
-    <footer>
+        </footer>
 
-    </footer>
+    </section>
 
 </body>
 

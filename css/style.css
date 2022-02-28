@@ -1,0 +1,11 @@
+/* Utils */
+
+a {
+  text-decoration: none;
+  color: rgb(51, 127, 226);
+}
+
+.container-m {
+  max-width: 1000px;
+  margin: 0 auto;
+}
