@@ -9,3 +9,10 @@ a {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+/* Header */
+
+header img {
+  width: 90px;
+  height: 30px;
+}
